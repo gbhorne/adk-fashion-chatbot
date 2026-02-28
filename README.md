@@ -100,10 +100,6 @@ Open Web Preview on port 8000 and start chatting.
 
 68/68 checks passed. See [verification_results.txt](verification_results.txt) for full output.
 
-Total checks: 68
-Passed:       68
-Failed:       0
-ALL CHECKS PASSED - Ready for GitHub push!
 
 ## Key Design Decisions
 
@@ -117,6 +113,7 @@ ALL CHECKS PASSED - Ready for GitHub push!
 ## License
 
 MIT
+
 
 
 
