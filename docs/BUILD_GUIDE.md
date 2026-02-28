@@ -1,134 +1,133 @@
--#- -B-u-i-l-d-i-n-g- -a- -C-u-s-t-o-m-e-r---F-a-c-i-n-g- -A-I- -S-h-o-p-p-i-n-g- -A-s-s-i-s-t-a-n-t- -w-i-t-h- -G-o-o-g-l-e- -A-D-K-,- -G-e-m-i-n-i-,- -a-n-d- -B-i-g-Q-u-e-r-y- -â-€-”- -f-o-r- -$-0-
--
--#-#- -H-o-w- -I- -b-u-i-l-t- -a- -m-u-l-t-i---a-g-e-n-t- -f-a-s-h-i-o-n- -c-h-a-t-b-o-t- -t-h-a-t- -s-e-a-r-c-h-e-s- -p-r-o-d-u-c-t-s-,- -g-i-v-e-s- -s-t-y-l-i-n-g- -a-d-v-i-c-e-,- -a-n-d- -c-h-e-c-k-s- -i-n-v-e-n-t-o-r-y- -t-h-r-o-u-g-h- -n-a-t-u-r-a-l- -c-o-n-v-e-r-s-a-t-i-o-n-
--
--------
--
--I-'-v-e- -b-u-i-l-t- -s-e-v-e-r-a-l- -A-I- -a-g-e-n-t-s- -f-o-r- -i-n-t-e-r-n-a-l- -a-n-a-l-y-t-i-c-s- -â-€-”- -i-n-v-e-n-t-o-r-y- -d-a-s-h-b-o-a-r-d-s-,- -a-n-o-m-a-l-y- -d-e-t-e-c-t-i-o-n-,- -r-e-s-e-a-r-c-h- -t-o-o-l-s-.- -T-h-e-y- -a-l-l- -f-o-l-l-o-w- -t-h-e- -s-a-m-e- -p-a-t-t-e-r-n-:- -a-n-a-l-y-s-t- -a-s-k-s- -a- -q-u-e-s-t-i-o-n-,- -a-g-e-n-t- -q-u-e-r-i-e-s- -a- -d-a-t-a-b-a-s-e-,- -r-e-t-u-r-n-s- -s-t-r-u-c-t-u-r-e-d- -r-e-s-u-l-t-s-.-
--
--B-u-t- -n-o-n-e- -o-f- -t-h-e-m- -t-a-l-k-e-d- -t-o- -c-u-s-t-o-m-e-r-s-.-
--
--C-u-s-t-o-m-e-r---f-a-c-i-n-g- -A-I- -i-s- -a- -d-i-f-f-e-r-e-n-t- -p-r-o-b-l-e-m-.- -C-u-s-t-o-m-e-r-s- -d-o-n-'-t- -w-r-i-t-e- -S-Q-L-.- -T-h-e-y- -s-a-y- -t-h-i-n-g-s- -l-i-k-e- -"-I- -n-e-e-d- -s-o-m-e-t-h-i-n-g- -r-e-d- -a-n-d- -f-l-o-w-y- -f-o-r- -a- -d-i-n-n-e-r- -p-a-r-t-y-,- -n-o-t-h-i-n-g- -t-o-o- -e-x-p-e-n-s-i-v-e-.-"- -T-h-e-y- -e-x-p-e-c-t- -t-h-e- -s-y-s-t-e-m- -t-o- -u-n-d-e-r-s-t-a-n-d- -i-n-t-e-n-t-,- -h-a-n-d-l-e- -a-m-b-i-g-u-i-t-y-,- -a-n-d- -r-e-s-p-o-n-d- -l-i-k-e- -a- -p-e-r-s-o-n- -â-€-”- -n-o-t- -a- -s-e-a-r-c-h- -e-n-g-i-n-e-.-
--
--S-o- -I- -b-u-i-l-t- -a- -c-o-n-v-e-r-s-a-t-i-o-n-a-l- -f-a-s-h-i-o-n- -s-h-o-p-p-i-n-g- -a-s-s-i-s-t-a-n-t- -u-s-i-n-g- -G-o-o-g-l-e-'-s- -A-g-e-n-t- -D-e-v-e-l-o-p-m-e-n-t- -K-i-t-.- -F-o-u-r- -a-g-e-n-t-s-,- -e-l-e-v-e-n- -t-o-o-l-s-,- -t-h-r-e-e- -h-u-n-d-r-e-d- -p-r-o-d-u-c-t-s-,- -z-e-r-o- -d-o-l-l-a-r-s-.-
--
--H-e-r-e-'-s- -h-o-w- -i-t- -w-o-r-k-s- -a-n-d- -w-h-a-t- -I- -l-e-a-r-n-e-d-.-
--
--------
--
--#-#- -T-h-e- -P-r-o-b-l-e-m- -w-i-t-h- -S-i-n-g-l-e---A-g-e-n-t- -C-h-a-t-b-o-t-s-
--
--M-o-s-t- -s-h-o-p-p-i-n-g- -c-h-a-t-b-o-t-s- -a-r-e- -g-l-o-r-i-f-i-e-d- -s-e-a-r-c-h- -b-a-r-s-.- -Y-o-u- -t-y-p-e- -"-r-e-d- -d-r-e-s-s-,-"- -i-t- -r-e-t-u-r-n-s- -a- -f-i-l-t-e-r-e-d- -l-i-s-t-.- -T-h-e-r-e-'-s- -n-o- -c-o-n-v-e-r-s-a-t-i-o-n-,- -n-o- -r-e-f-i-n-e-m-e-n-t-,- -n-o- -s-t-y-l-i-n-g- -a-d-v-i-c-e-.-
--
--T-h-e- -i-s-s-u-e- -i-s- -t-o-o-l- -o-v-e-r-l-o-a-d-.- -G-i-v-e- -o-n-e- -a-g-e-n-t- -f-i-f-t-e-e-n- -t-o-o-l-s- -â-€-”- -s-e-a-r-c-h-,- -f-i-l-t-e-r-,- -c-o-m-p-a-r-e-,- -s-u-g-g-e-s-t- -a-c-c-e-s-s-o-r-i-e-s-,- -c-h-e-c-k- -s-t-o-c-k-,- -f-i-n-d- -d-e-a-l-s- -â-€-”- -a-n-d- -i-t- -s-t-r-u-g-g-l-e-s- -t-o- -p-i-c-k- -t-h-e- -r-i-g-h-t- -o-n-e-.- -I-t- -h-a-l-l-u-c-i-n-a-t-e-s- -p-a-r-a-m-e-t-e-r-s-.- -I-t- -c-a-l-l-s- -t-h-e- -w-r-o-n-g- -t-o-o-l- -f-o-r- -t-h-e- -i-n-t-e-n-t-.-
--
--T-h-e- -f-i-x- -i-s- -s-p-e-c-i-a-l-i-z-a-t-i-o-n-.- -I-n-s-t-e-a-d- -o-f- -o-n-e- -a-g-e-n-t- -d-o-i-n-g- -e-v-e-r-y-t-h-i-n-g-,- -I- -s-p-l-i-t- -t-h-e- -w-o-r-k- -i-n-t-o- -t-h-r-e-e- -s-p-e-c-i-a-l-i-s-t-s-,- -e-a-c-h- -w-i-t-h- -a- -f-o-c-u-s-e-d- -s-e-t- -o-f- -t-o-o-l-s-,- -c-o-o-r-d-i-n-a-t-e-d- -b-y- -a- -r-o-o-t- -o-r-c-h-e-s-t-r-a-t-o-r-.-
--
--------
--
--#-#- -T-h-e- -A-r-c-h-i-t-e-c-t-u-r-e-
--
--T-h-e- -s-y-s-t-e-m- -h-a-s- -f-o-u-r- -a-g-e-n-t-s- -a-r-r-a-n-g-e-d- -i-n- -a- -h-u-b---a-n-d---s-p-o-k-e- -p-a-t-t-e-r-n-.-
--
--T-h-e- -*-*-s-h-o-p-p-i-n-g- -o-r-c-h-e-s-t-r-a-t-o-r-*-*- -i-s- -t-h-e- -r-o-o-t- -a-g-e-n-t-.- -I-t- -r-e-c-e-i-v-e-s- -e-v-e-r-y- -c-u-s-t-o-m-e-r- -m-e-s-s-a-g-e-,- -c-l-a-s-s-i-f-i-e-s- -t-h-e- -i-n-t-e-n-t-,- -a-n-d- -r-o-u-t-e-s- -t-o- -t-h-e- -r-i-g-h-t- -s-p-e-c-i-a-l-i-s-t-.- -I-t- -n-e-v-e-r- -q-u-e-r-i-e-s- -t-h-e- -d-a-t-a-b-a-s-e- -d-i-r-e-c-t-l-y- -â-€-”- -i-t-s- -o-n-l-y- -j-o-b- -i-s- -r-o-u-t-i-n-g-.-
--
--T-h-e- -*-*-p-r-o-d-u-c-t- -f-i-n-d-e-r-*-*- -h-a-n-d-l-e-s- -a-l-l- -c-a-t-a-l-o-g- -s-e-a-r-c-h-e-s-.- -I-t- -h-a-s- -f-o-u-r- -t-o-o-l-s-:- -`-s-e-a-r-c-h-_-p-r-o-d-u-c-t-s-`- -f-o-r- -f-i-l-t-e-r-e-d- -b-r-o-w-s-i-n-g-,- -`-g-e-t-_-p-r-o-d-u-c-t-_-d-e-t-a-i-l-s-`- -f-o-r- -d-e-e-p- -d-i-v-e-s-,- -`-g-e-t-_-s-i-m-i-l-a-r-_-i-t-e-m-s-`- -f-o-r- -r-e-c-o-m-m-e-n-d-a-t-i-o-n-s-,- -a-n-d- -`-f-i-l-t-e-r-_-b-y-_-a-t-t-r-i-b-u-t-e-s-`- -f-o-r- -s-p-e-c-i-f-i-c- -c-r-i-t-e-r-i-a- -l-i-k-e- -f-a-b-r-i-c- -o-r- -t-a-g-s-.- -W-h-e-n- -a- -c-u-s-t-o-m-e-r- -s-a-y-s- -"-s-h-o-w- -m-e- -e-v-e-n-i-n-g- -d-r-e-s-s-e-s-,-"- -t-h-i-s- -a-g-e-n-t- -h-a-n-d-l-e-s- -i-t-.-
--
--T-h-e- -*-*-s-t-y-l-e- -a-d-v-i-s-o-r-*-*- -h-a-n-d-l-e-s- -f-a-s-h-i-o-n- -e-x-p-e-r-t-i-s-e-.- -I-t- -c-o-m-p-a-r-e-s- -p-r-o-d-u-c-t-s- -s-i-d-e---b-y---s-i-d-e-,- -s-u-g-g-e-s-t-s- -a-c-c-e-s-s-o-r-i-e-s- -t-h-a-t- -p-a-i-r- -w-i-t-h- -a- -c-h-o-s-e-n- -i-t-e-m-,- -s-u-r-f-a-c-e-s- -t-r-e-n-d-i-n-g- -p-i-e-c-e-s-,- -a-n-d- -p-r-o-v-i-d-e-s- -o-c-c-a-s-i-o-n---a-p-p-r-o-p-r-i-a-t-e- -s-t-y-l-e- -t-i-p-s-.- -W-h-e-n- -a- -c-u-s-t-o-m-e-r- -s-a-y-s- -"-w-h-i-c-h- -o-f- -t-h-e-s-e- -w-o-u-l-d- -l-o-o-k- -b-e-t-t-e-r- -f-o-r- -a- -w-e-d-d-i-n-g-,-"- -t-h-i-s- -a-g-e-n-t- -h-a-n-d-l-e-s- -i-t-.-
--
--T-h-e- -*-*-a-v-a-i-l-a-b-i-l-i-t-y- -c-h-e-c-k-e-r-*-*- -h-a-n-d-l-e-s- -l-o-g-i-s-t-i-c-s-.- -S-t-o-c-k- -l-e-v-e-l-s-,- -s-i-z-e- -a-v-a-i-l-a-b-i-l-i-t-y-,- -p-r-i-c-e- -r-a-n-g-e-s-,- -a-n-d- -b-u-d-g-e-t---c-o-n-s-t-r-a-i-n-e-d- -d-e-a-l- -f-i-n-d-i-n-g-.- -W-h-e-n- -a- -c-u-s-t-o-m-e-r- -s-a-y-s- -"-d-o- -y-o-u- -h-a-v-e- -t-h-a-t- -i-n- -a- -m-e-d-i-u-m-,-"- -t-h-i-s- -a-g-e-n-t- -h-a-n-d-l-e-s- -i-t-.-
--
--E-a-c-h- -s-p-e-c-i-a-l-i-s-t- -h-a-s- -i-t-s- -o-w-n- -G-e-m-i-n-i- -2-.-5- -F-l-a-s-h- -i-n-s-t-a-n-c-e-,- -i-t-s- -o-w-n- -i-n-s-t-r-u-c-t-i-o-n- -p-r-o-m-p-t-,- -a-n-d- -i-t-s- -o-w-n- -t-o-o-l- -s-e-t-.- -T-h-e-y- -s-h-a-r-e- -a- -s-i-n-g-l-e- -B-i-g-Q-u-e-r-y- -t-a-b-l-e- -b-u-t- -n-e-v-e-r- -s-e-e- -e-a-c-h- -o-t-h-e-r-'-s- -t-o-o-l-s-.-
--
--------
--
--#-#- -T-h-e- -D-a-t-a- -L-a-y-e-r-
--
--T-h-e- -p-r-o-d-u-c-t- -c-a-t-a-l-o-g- -i-s- -a- -s-i-n-g-l-e- -B-i-g-Q-u-e-r-y- -t-a-b-l-e- -w-i-t-h- -2-2- -c-o-l-u-m-n-s- -a-n-d- -3-0-0- -s-y-n-t-h-e-t-i-c- -f-a-s-h-i-o-n- -p-r-o-d-u-c-t-s-.- -D-r-e-s-s-e-s-,- -t-o-p-s-,- -p-a-n-t-s-,- -j-a-c-k-e-t-s-,- -a-c-c-e-s-s-o-r-i-e-s- -â-€-”- -e-a-c-h- -w-i-t-h- -c-o-l-o-r-s-,- -s-t-y-l-e-s-,- -o-c-c-a-s-i-o-n-s-,- -f-a-b-r-i-c-s-,- -s-i-z-e-s-,- -p-r-i-c-e-s-,- -r-a-t-i-n-g-s-,- -a-n-d- -d-e-s-c-r-i-p-t-i-v-e- -t-a-g-s-.-
--
--T-w-o- -d-e-s-i-g-n- -d-e-c-i-s-i-o-n-s- -s-h-a-p-e-d- -t-h-e- -s-c-h-e-m-a-.-
--
--F-i-r-s-t-,- -I- -u-s-e-d- -A-R-R-A-Y- -c-o-l-u-m-n-s- -f-o-r- -s-i-z-e-s- -a-n-d- -t-a-g-s-.- -I-n-s-t-e-a-d- -o-f- -a- -s-e-p-a-r-a-t-e- -`-p-r-o-d-u-c-t-_-s-i-z-e-s-`- -j-u-n-c-t-i-o-n- -t-a-b-l-e-,- -t-h-e- -`-s-i-z-e-_-a-v-a-i-l-a-b-l-e-`- -c-o-l-u-m-n- -s-t-o-r-e-s- -`-[-"-X-S-"-,- -"-S-"-,- -"-M-"-,- -"-L-"-,- -"-X-L-"-]-`- -d-i-r-e-c-t-l-y-.- -B-i-g-Q-u-e-r-y- -q-u-e-r-i-e-s- -t-h-e-s-e- -w-i-t-h- -U-N-N-E-S-T-:- -`-W-H-E-R-E- -"-M-"- -I-N- -U-N-N-E-S-T-(-s-i-z-e-_-a-v-a-i-l-a-b-l-e-)-`-.- -S-a-m-e- -f-o-r- -t-a-g-s- -l-i-k-e- -"-b-a-c-k-l-e-s-s-"- -o-r- -"-v-_-n-e-c-k-.-"- -T-h-i-s- -e-l-i-m-i-n-a-t-e-s- -j-o-i-n-s- -a-n-d- -k-e-e-p-s- -e-v-e-r-y- -t-o-o-l-'-s- -S-Q-L- -s-i-m-p-l-e-.-
--
--S-e-c-o-n-d-,- -I- -u-s-e-d- -a- -s-i-n-g-l-e- -d-e-n-o-r-m-a-l-i-z-e-d- -t-a-b-l-e- -i-n-s-t-e-a-d- -o-f- -n-o-r-m-a-l-i-z-e-d- -r-e-l-a-t-i-o-n-s-.- -B-i-g-Q-u-e-r-y- -i-s- -c-o-l-u-m-n-a-r- -â-€-”- -i-t- -o-n-l-y- -r-e-a-d-s- -t-h-e- -c-o-l-u-m-n-s- -y-o-u- -S-E-L-E-C-T-,- -r-e-g-a-r-d-l-e-s-s- -o-f- -h-o-w- -w-i-d-e- -t-h-e- -t-a-b-l-e- -i-s-.- -A- -2-2---c-o-l-u-m-n- -t-a-b-l-e- -w-h-e-r-e- -y-o-u- -r-e-a-d- -6- -c-o-l-u-m-n-s- -c-o-s-t-s- -t-h-e- -s-a-m-e- -a-s- -a- -6---c-o-l-u-m-n- -t-a-b-l-e-.- -T-h-e- -s-i-m-p-l-i-c-i-t-y- -g-a-i-n- -f-r-o-m- -a-v-o-i-d-i-n-g- -j-o-i-n-s- -o-u-t-w-e-i-g-h-s- -a-n-y- -t-h-e-o-r-e-t-i-c-a-l- -n-o-r-m-a-l-i-z-a-t-i-o-n- -b-e-n-e-f-i-t- -a-t- -t-h-i-s- -s-c-a-l-e-.-
--
--------
--
--#-#- -T-h-e- -S-e-a-r-c-h- -B-r-o-a-d-e-n-i-n-g- -S-t-r-a-t-e-g-y-
--
--T-h-i-s- -i-s- -t-h-e- -f-e-a-t-u-r-e- -I-'-m- -m-o-s-t- -p-r-o-u-d- -o-f-,- -a-n-d- -i-t-'-s- -n-o-t- -a- -f-e-a-t-u-r-e- -i-n- -t-h-e- -t-r-a-d-i-t-i-o-n-a-l- -s-e-n-s-e-.- -I-t-'-s- -a- -b-e-h-a-v-i-o-r- -e-n-c-o-d-e-d- -i-n- -t-h-e- -a-g-e-n-t-'-s- -i-n-s-t-r-u-c-t-i-o-n-s-.-
--
--W-h-e-n- -a- -c-u-s-t-o-m-e-r- -a-s-k-s- -f-o-r- -"-a- -r-e-d- -f-l-o-w-y- -e-v-e-n-i-n-g- -d-r-e-s-s-"- -a-n-d- -t-h-e- -c-a-t-a-l-o-g- -o-n-l-y- -h-a-s- -o-n-e- -r-e-d- -e-v-e-n-i-n-g- -d-r-e-s-s- -(-a-n-d- -i-t-'-s- -b-o-d-y-c-o-n-,- -n-o-t- -f-l-o-w-y-)-,- -m-o-s-t- -c-h-a-t-b-o-t-s- -r-e-t-u-r-n- -"-n-o- -r-e-s-u-l-t-s- -f-o-u-n-d-.-"- -T-h-a-t-'-s- -a- -d-e-a-d- -e-n-d-.-
--
--M-y- -p-r-o-d-u-c-t- -f-i-n-d-e-r- -d-o-e-s- -s-o-m-e-t-h-i-n-g- -d-i-f-f-e-r-e-n-t-.- -I-t- -s-e-a-r-c-h-e-s- -w-i-t-h- -a-l-l- -f-i-l-t-e-r-s- -f-i-r-s-t-.- -W-h-e-n- -i-t- -g-e-t-s- -n-o- -r-e-s-u-l-t-s-,- -i-t- -d-r-o-p-s- -t-h-e- -l-e-a-s-t- -c-r-i-t-i-c-a-l- -f-i-l-t-e-r- -â-€-”- -i-n- -t-h-i-s- -c-a-s-e-,- -"-f-l-o-w-y-"- -â-€-”- -a-n-d- -s-e-a-r-c-h-e-s- -a-g-a-i-n-.- -T-h-e-n- -i-t- -t-e-l-l-s- -t-h-e- -c-u-s-t-o-m-e-r- -w-h-a-t- -h-a-p-p-e-n-e-d-:- -"-I- -c-o-u-l-d-n-'-t- -f-i-n-d- -a- -r-e-d- -f-l-o-w-y- -e-v-e-n-i-n-g- -d-r-e-s-s-,- -s-o- -I- -b-r-o-a-d-e-n-e-d- -t-h-e- -s-e-a-r-c-h- -t-o- -a-l-l- -r-e-d- -e-v-e-n-i-n-g- -d-r-e-s-s-e-s-.- -H-e-r-e-'-s- -w-h-a-t- -I- -f-o-u-n-d-.-"-
--
--T-h-i-s- -i-s- -h-o-w- -a- -r-e-a-l- -p-e-r-s-o-n-a-l- -s-h-o-p-p-e-r- -o-p-e-r-a-t-e-s-.- -S-t-a-r-t- -s-p-e-c-i-f-i-c-,- -w-i-d-e-n- -p-r-o-g-r-e-s-s-i-v-e-l-y-,- -a-n-d- -b-e- -t-r-a-n-s-p-a-r-e-n-t- -a-b-o-u-t- -i-t-.-
--
--T-h-e- -b-e-h-a-v-i-o-r- -i-s-n-'-t- -h-a-r-d-c-o-d-e-d- -i-n- -S-Q-L- -o-r- -P-y-t-h-o-n-.- -I-t-'-s- -i-n- -t-h-e- -a-g-e-n-t-'-s- -i-n-s-t-r-u-c-t-i-o-n- -p-r-o-m-p-t-.- -G-e-m-i-n-i- -r-e-a-d-s- -t-h-e- -i-n-s-t-r-u-c-t-i-o-n-s-,- -r-e-c-o-g-n-i-z-e-s- -t-h-e- -n-o---r-e-s-u-l-t-s- -s-c-e-n-a-r-i-o-,- -a-n-d- -d-e-c-i-d-e-s- -w-h-i-c-h- -f-i-l-t-e-r- -t-o- -d-r-o-p-.- -T-h-e- -L-L-M- -h-a-n-d-l-e-s- -t-h-e- -j-u-d-g-m-e-n-t- -c-a-l-l-;- -t-h-e- -t-o-o-l-s- -h-a-n-d-l-e- -t-h-e- -d-a-t-a- -r-e-t-r-i-e-v-a-l-.-
--
--------
--
--#-#- -F-i-x-e-d- -S-Q-L- -v-s-.- -T-e-x-t---t-o---S-Q-L-
--
--E-v-e-r-y- -t-o-o-l- -i-n- -t-h-i-s- -s-y-s-t-e-m- -u-s-e-s- -h-a-n-d---w-r-i-t-t-e-n- -S-Q-L- -w-i-t-h- -p-a-r-a-m-e-t-e-r-i-z-e-d- -i-n-p-u-t-s-.- -N-o- -t-o-o-l- -g-e-n-e-r-a-t-e-s- -S-Q-L- -d-y-n-a-m-i-c-a-l-l-y- -f-r-o-m- -n-a-t-u-r-a-l- -l-a-n-g-u-a-g-e-.-
--
--T-h-i-s- -i-s- -a- -d-e-l-i-b-e-r-a-t-e- -c-h-o-i-c-e-.- -T-e-x-t---t-o---S-Q-L- -i-s- -i-m-p-r-e-s-s-i-v-e- -i-n- -d-e-m-o-s- -b-u-t- -d-a-n-g-e-r-o-u-s- -i-n- -p-r-o-d-u-c-t-i-o-n-.- -T-h-e- -L-L-M- -m-i-g-h-t- -g-e-n-e-r-a-t-e- -a- -q-u-e-r-y- -t-h-a-t- -s-c-a-n-s- -t-h-e- -e-n-t-i-r-e- -t-a-b-l-e- -(-e-x-p-e-n-s-i-v-e-)-,- -r-e-t-u-r-n-s- -u-n-e-x-p-e-c-t-e-d- -c-o-l-u-m-n-s- -(-c-o-n-f-u-s-i-n-g- -f-o-r- -t-h-e- -a-g-e-n-t-)-,- -o-r- -i-n-c-l-u-d-e-s- -S-Q-L- -i-n-j-e-c-t-i-o-n- -v-e-c-t-o-r-s- -(-d-a-n-g-e-r-o-u-s- -i-f- -c-o-n-n-e-c-t-e-d- -t-o- -r-e-a-l- -d-a-t-a-)-.-
--
--F-i-x-e-d- -S-Q-L- -m-e-a-n-s- -I- -k-n-o-w- -e-x-a-c-t-l-y- -w-h-a-t- -r-u-n-s-.- -`-s-e-a-r-c-h-_-p-r-o-d-u-c-t-s-`- -a-l-w-a-y-s- -g-e-n-e-r-a-t-e-s- -t-h-e- -s-a-m-e- -S-E-L-E-C-T- -w-i-t-h- -a- -d-y-n-a-m-i-c- -W-H-E-R-E- -c-l-a-u-s-e-.- -`-g-e-t-_-s-i-m-i-l-a-r-_-i-t-e-m-s-`- -a-l-w-a-y-s- -u-s-e-s- -t-h-e- -s-a-m-e- -C-T-E- -w-i-t-h- -a-t-t-r-i-b-u-t-e---b-a-s-e-d- -s-c-o-r-i-n-g-.- -E-v-e-r-y- -q-u-e-r-y- -i-s- -t-e-s-t-a-b-l-e-,- -p-r-e-d-i-c-t-a-b-l-e-,- -a-n-d- -s-a-f-e-.-
--
--T-h-e- -t-r-a-d-e-o-f-f- -i-s- -f-l-e-x-i-b-i-l-i-t-y- -â-€-”- -a- -n-e-w- -s-e-a-r-c-h- -p-a-t-t-e-r-n- -r-e-q-u-i-r-e-s- -a- -c-o-d-e- -c-h-a-n-g-e-.- -B-u-t- -f-o-r- -a- -b-o-u-n-d-e-d- -p-r-o-d-u-c-t- -c-a-t-a-l-o-g- -w-i-t-h- -k-n-o-w-n- -a-t-t-r-i-b-u-t-e-s-,- -t-h-a-t-'-s- -t-h-e- -r-i-g-h-t- -t-r-a-d-e-o-f-f-.- -Y-o-u- -d-o-n-'-t- -n-e-e-d- -i-n-f-i-n-i-t-e- -S-Q-L- -f-l-e-x-i-b-i-l-i-t-y- -w-h-e-n- -y-o-u- -h-a-v-e- -1-1- -w-e-l-l---d-e-s-i-g-n-e-d- -t-o-o-l-s- -c-o-v-e-r-i-n-g- -e-v-e-r-y- -r-e-a-s-o-n-a-b-l-e- -c-u-s-t-o-m-e-r- -q-u-e-r-y-.-
--
--------
--
--#-#- -W-h-a-t- -I- -L-e-a-r-n-e-d- -A-b-o-u-t- -A-g-e-n-t- -I-n-s-t-r-u-c-t-i-o-n-s-
--
--T-h-e- -h-a-r-d-e-s-t- -p-a-r-t- -o-f- -t-h-i-s- -p-r-o-j-e-c-t- -w-a-s-n-'-t- -t-h-e- -c-o-d-e-.- -t-o-o-l-s-.-p-y- -i-s- -3-0-0- -l-i-n-e-s- -o-f- -s-t-r-a-i-g-h-t-f-o-r-w-a-r-d- -S-Q-L-.- -a-g-e-n-t-.-p-y- -i-s- -1-2-0- -l-i-n-e-s- -o-f- -a-g-e-n-t- -c-o-n-f-i-g-u-r-a-t-i-o-n-.-
--
--T-h-e- -h-a-r-d- -p-a-r-t- -w-a-s- -w-r-i-t-i-n-g- -i-n-s-t-r-u-c-t-i-o-n-s- -t-h-a-t- -p-r-o-d-u-c-e- -c-o-n-s-i-s-t-e-n-t-,- -h-i-g-h---q-u-a-l-i-t-y- -r-e-s-p-o-n-s-e-s- -a-c-r-o-s-s- -e-d-g-e- -c-a-s-e-s-.-
--
--T-h-r-e-e- -e-x-a-m-p-l-e-s-.-
--
--F-o-r- -t-h-e- -p-r-o-d-u-c-t- -f-i-n-d-e-r-,- -I- -h-a-d- -t-o- -s-p-e-c-i-f-y- -"-p-r-e-s-e-n-t- -a- -m-a-x-i-m-u-m- -o-f- -5- -i-t-e-m-s- -a-t- -a- -t-i-m-e-.-"- -W-i-t-h-o-u-t- -t-h-i-s-,- -t-h-e- -a-g-e-n-t- -w-o-u-l-d- -d-u-m-p- -a-l-l- -1-0- -r-e-s-u-l-t-s- -i-n- -o-n-e- -m-e-s-s-a-g-e- -â-€-”- -o-v-e-r-w-h-e-l-m-i-n-g- -f-o-r- -a- -c-u-s-t-o-m-e-r-.- -W-i-t-h- -t-h-e- -l-i-m-i-t-,- -i-t- -p-r-e-s-e-n-t-s- -5- -a-n-d- -a-s-k-s- -"-w-o-u-l-d- -y-o-u- -l-i-k-e- -t-o- -s-e-e- -m-o-r-e-?-"-
--
--F-o-r- -t-h-e- -s-t-y-l-e- -a-d-v-i-s-o-r-,- -I- -h-a-d- -t-o- -s-p-e-c-i-f-y- -"-e-x-p-l-a-i-n- -W-H-Y- -a-c-c-e-s-s-o-r-i-e-s- -p-a-i-r- -w-e-l-l-.-"- -W-i-t-h-o-u-t- -t-h-i-s-,- -i-t- -w-o-u-l-d- -j-u-s-t- -l-i-s-t- -m-a-t-c-h-i-n-g- -a-c-c-e-s-s-o-r-i-e-s-.- -W-i-t-h- -t-h-e- -i-n-s-t-r-u-c-t-i-o-n-,- -i-t- -s-a-y-s- -t-h-i-n-g-s- -l-i-k-e- -"-t-h-e- -g-o-l-d- -h-a-r-d-w-a-r-e- -w-i-l-l- -c-o-n-t-r-a-s-t- -b-e-a-u-t-i-f-u-l-l-y- -w-i-t-h- -t-h-e- -r-e-d- -d-r-e-s-s-,- -a-d-d-i-n-g- -w-a-r-m-t-h- -w-i-t-h-o-u-t- -c-o-m-p-e-t-i-n-g- -w-i-t-h- -t-h-e- -b-o-l-d- -c-o-l-o-r-.-"- -T-h-a-t-'-s- -t-h-e- -d-i-f-f-e-r-e-n-c-e- -b-e-t-w-e-e-n- -a- -s-e-a-r-c-h- -r-e-s-u-l-t- -a-n-d- -a- -s-t-y-l-i-n-g- -e-x-p-e-r-i-e-n-c-e-.-
--
--F-o-r- -t-h-e- -a-v-a-i-l-a-b-i-l-i-t-y- -c-h-e-c-k-e-r-,- -I- -h-a-d- -t-o- -s-p-e-c-i-f-y- -"-a-l-w-a-y-s- -m-e-n-t-i-o-n- -t-h-e- -e-x-a-c-t- -p-r-i-c-e-.-"- -W-i-t-h-o-u-t- -t-h-i-s-,- -i-t- -w-o-u-l-d- -s-a-y- -"-i-t-'-s- -i-n- -t-h-e- -m-i-d- -p-r-i-c-e- -r-a-n-g-e-"- -â-€-”- -u-s-e-l-e-s-s- -f-o-r- -a- -b-u-y-i-n-g- -d-e-c-i-s-i-o-n-.- -W-i-t-h- -t-h-e- -i-n-s-t-r-u-c-t-i-o-n-,- -i-t- -s-a-y-s- -"-$-1-0-0-.-4-3-"- -â-€-”- -a-c-t-i-o-n-a-b-l-e- -i-n-f-o-r-m-a-t-i-o-n-.-
--
--A-g-e-n-t- -i-n-s-t-r-u-c-t-i-o-n-s- -a-r-e- -t-h-e- -p-r-o-d-u-c-t- -d-e-s-i-g-n- -l-a-y-e-r- -o-f- -L-L-M- -a-p-p-l-i-c-a-t-i-o-n-s-.- -T-h-e-y- -d-e-s-e-r-v-e- -t-h-e- -s-a-m-e- -a-t-t-e-n-t-i-o-n- -a-s- -U-I- -w-i-r-e-f-r-a-m-e-s-.-
--
--------
--
--#-#- -T-h-e- -$-0- -S-t-a-c-k-
--
--T-h-e- -e-n-t-i-r-e- -p-r-o-j-e-c-t- -r-u-n-s- -a-t- -z-e-r-o- -c-o-s-t-.-
--
--G-e-m-i-n-i- -2-.-5- -F-l-a-s-h- -t-h-r-o-u-g-h- -A-I- -S-t-u-d-i-o-'-s- -f-r-e-e- -t-i-e-r- -h-a-n-d-l-e-s- -a-l-l- -L-L-M- -i-n-f-e-r-e-n-c-e-.- -T-h-e- -r-a-t-e- -l-i-m-i-t- -(-5---1-5- -R-P-M-)- -i-s- -f-i-n-e- -f-o-r- -d-e-v-e-l-o-p-m-e-n-t- -a-n-d- -d-e-m-o-s-.- -B-i-g-Q-u-e-r-y-'-s- -f-r-e-e- -t-i-e-r- -p-r-o-v-i-d-e-s- -1- -T-B- -o-f- -q-u-e-r-i-e-s- -a-n-d- -1-0- -G-B- -o-f- -s-t-o-r-a-g-e- -p-e-r- -m-o-n-t-h- -â-€-”- -o-r-d-e-r-s- -o-f- -m-a-g-n-i-t-u-d-e- -m-o-r-e- -t-h-a-n- -t-h-i-s- -p-r-o-j-e-c-t- -n-e-e-d-s-.- -A-D-K- -i-s- -o-p-e-n- -s-o-u-r-c-e-.- -P-y-t-h-o-n- -i-s- -f-r-e-e-.- -T-h-e- -A-D-K- -w-e-b- -U-I- -p-r-o-v-i-d-e-s- -t-h-e- -c-h-a-t- -i-n-t-e-r-f-a-c-e-.-
--
--F-o-r- -p-r-o-d-u-c-t-i-o-n-,- -y-o-u-'-d- -s-w-i-t-c-h- -t-o- -V-e-r-t-e-x- -A-I- -f-o-r- -h-i-g-h-e-r- -r-a-t-e- -l-i-m-i-t-s- -a-n-d- -S-L-A- -g-u-a-r-a-n-t-e-e-s-,- -d-e-p-l-o-y- -t-o- -C-l-o-u-d- -R-u-n- -f-o-r- -H-T-T-P-S- -a-n-d- -a-u-t-o-s-c-a-l-i-n-g-,- -a-n-d- -a-d-d- -m-o-n-i-t-o-r-i-n-g-.- -B-u-t- -t-h-e- -a-r-c-h-i-t-e-c-t-u-r-e- -s-t-a-y-s- -t-h-e- -s-a-m-e-.-
--
--------
--
--#-#- -R-e-s-u-l-t-s-
--
--T-h-e- -a-g-e-n-t- -c-o-r-r-e-c-t-l-y- -r-o-u-t-e-s- -q-u-e-r-i-e-s- -t-o- -t-h-e- -r-i-g-h-t- -s-p-e-c-i-a-l-i-s-t- -a-c-r-o-s-s- -a-l-l- -t-e-s-t- -s-c-e-n-a-r-i-o-s-.- -S-e-a-r-c-h- -q-u-e-r-i-e-s- -g-o- -t-o- -p-r-o-d-u-c-t-_-f-i-n-d-e-r-.- -S-t-y-l-i-n-g- -q-u-e-s-t-i-o-n-s- -g-o- -t-o- -s-t-y-l-e-_-a-d-v-i-s-o-r-.- -S-t-o-c-k- -c-h-e-c-k-s- -g-o- -t-o- -a-v-a-i-l-a-b-i-l-i-t-y-_-c-h-e-c-k-e-r-.-
--
--W-h-e-n- -e-x-a-c-t- -m-a-t-c-h-e-s- -a-r-e-n-'-t- -a-v-a-i-l-a-b-l-e-,- -t-h-e- -s-e-a-r-c-h- -b-r-o-a-d-e-n-i-n-g- -b-e-h-a-v-i-o-r- -k-i-c-k-s- -i-n- -â-€-”- -t-h-e- -a-g-e-n-t- -d-r-o-p-s- -f-i-l-t-e-r-s-,- -e-x-p-l-a-i-n-s- -w-h-a-t- -i-t- -c-h-a-n-g-e-d-,- -a-n-d- -s-t-i-l-l- -d-e-l-i-v-e-r-s- -u-s-e-f-u-l- -r-e-s-u-l-t-s-.-
--
--T-h-e- -a-c-c-e-s-s-o-r-y- -s-u-g-g-e-s-t-i-o-n-s- -i-n-c-l-u-d-e- -r-e-a-s-o-n-i-n-g-:- -w-h-y- -a- -g-o-l-d- -b-e-l-t- -p-a-i-r-s- -w-i-t-h- -a- -r-e-d- -d-r-e-s-s-,- -w-h-y- -a- -b-l-a-c-k- -n-e-c-k-l-a-c-e- -g-r-o-u-n-d-s- -a- -b-o-l-d- -c-o-l-o-r-.- -T-h-e- -t-r-e-n-d-i-n-g- -r-e-s-u-l-t-s- -i-n-c-l-u-d-e- -r-a-t-i-n-g-s- -a-n-d- -d-e-s-c-r-i-p-t-i-o-n-s-.- -T-h-e- -d-e-a-l- -f-i-n-d-e-r- -p-r-i-o-r-i-t-i-z-e-s- -q-u-a-l-i-t-y- -w-i-t-h-i-n- -a- -b-u-d-g-e-t-,- -n-o-t- -j-u-s-t- -t-h-e- -c-h-e-a-p-e-s-t- -i-t-e-m-s-.-
--
--T-h-r-e-e- -h-u-n-d-r-e-d- -l-i-n-e-s- -o-f- -t-o-o-l- -c-o-d-e-.- -O-n-e- -h-u-n-d-r-e-d- -t-w-e-n-t-y- -l-i-n-e-s- -o-f- -a-g-e-n-t- -c-o-n-f-i-g-u-r-a-t-i-o-n-.- -F-o-u-r- -a-g-e-n-t-s- -c-o-o-r-d-i-n-a-t-i-n-g- -t-h-r-o-u-g-h- -n-a-t-u-r-a-l- -l-a-n-g-u-a-g-e- -r-o-u-t-i-n-g-.- -A- -c-o-n-v-e-r-s-a-t-i-o-n-a-l- -s-h-o-p-p-i-n-g- -e-x-p-e-r-i-e-n-c-e- -t-h-a-t- -h-a-n-d-l-e-s- -a-m-b-i-g-u-i-t-y-,- -b-r-o-a-d-e-n-s- -s-e-a-r-c-h-e-s-,- -a-n-d- -e-x-p-l-a-i-n-s- -i-t-s- -r-e-c-o-m-m-e-n-d-a-t-i-o-n-s-.-
--
--A-n-d- -i-t- -c-o-s-t- -n-o-t-h-i-n-g- -t-o- -b-u-i-l-d-.-
--
--------
--
--#-#- -W-h-a-t-'-s- -N-e-x-t-
--
--T-h-i-s- -i-s- -m-y- -s-i-x-t-h- -A-D-K- -p-r-o-j-e-c-t-,- -b-u-t- -t-h-e- -f-i-r-s-t- -o-n-e- -t-h-a-t- -f-a-c-e-s- -c-u-s-t-o-m-e-r-s- -i-n-s-t-e-a-d- -o-f- -a-n-a-l-y-s-t-s-.- -T-h-e- -n-e-x-t- -s-t-e-p- -i-s- -a- -V-e-r-t-e-x- -A-I- -P-i-p-e-l-i-n-e- -p-r-o-j-e-c-t- -â-€-”- -t-a-k-i-n-g- -a- -m-a-c-h-i-n-e- -l-e-a-r-n-i-n-g- -m-o-d-e-l- -f-r-o-m- -t-r-a-i-n-i-n-g- -t-h-r-o-u-g-h- -r-e-g-i-s-t-r-y- -t-o- -e-n-d-p-o-i-n-t- -d-e-p-l-o-y-m-e-n-t- -w-i-t-h- -K-u-b-e-f-l-o-w- -o-r-c-h-e-s-t-r-a-t-i-o-n- -a-n-d- -d-r-i-f-t- -m-o-n-i-t-o-r-i-n-g-.- -D-i-f-f-e-r-e-n-t- -p-r-o-b-l-e-m- -s-p-a-c-e-,- -s-a-m-e- -p-r-i-n-c-i-p-l-e-:- -b-u-i-l-d- -t-h-e- -a-r-c-h-i-t-e-c-t-u-r-e- -t-h-a-t- -p-r-o-d-u-c-t-i-o-n- -s-y-s-t-e-m-s- -a-c-t-u-a-l-l-y- -n-e-e-d-.-
--
--T-h-e- -r-e-p-o- -i-s- -o-n- -G-i-t-H-u-b-:- -[-g-i-t-h-u-b-.-c-o-m-/-g-b-h-o-r-n-e-/-a-d-k---f-a-s-h-i-o-n---c-h-a-t-b-o-t-]-(-h-t-t-p-s-:-/-/-g-i-t-h-u-b-.-c-o-m-/-g-b-h-o-r-n-e-/-a-d-k---f-a-s-h-i-o-n---c-h-a-t-b-o-t-)-
--
--------
--
--*-B-u-i-l-t- -w-i-t-h- -G-o-o-g-l-e- -A-D-K-,- -G-e-m-i-n-i- -2-.-5- -F-l-a-s-h-,- -B-i-g-Q-u-e-r-y-,- -a-n-d- -P-y-t-h-o-n-.- -A-r-c-h-i-t-e-c-t-u-r-e- -d-i-a-g-r-a-m- -a-n-d- -d-o-c-u-m-e-n-t-a-t-i-o-n- -i-n-c-l-u-d-e-d- -i-n- -t-h-e- -r-e-p-o-s-i-t-o-r-y-.-*-
--
+# Building a Customer-Facing AI Shopping Assistant with Google ADK, Gemini, and BigQuery  -  for $0
+
+## How I built a multi-agent fashion chatbot that searches products, gives styling advice, and checks inventory through natural conversation
+
+---
+
+I've built several AI agents for internal analytics  -  inventory dashboards, anomaly detection, research tools. They all follow the same pattern: analyst asks a question, agent queries a database, returns structured results.
+
+But none of them talked to customers.
+
+Customer-facing AI is a different problem. Customers don't write SQL. They say things like "I need something red and flowy for a dinner party, nothing too expensive." They expect the system to understand intent, handle ambiguity, and respond like a person  -  not a search engine.
+
+So I built a conversational fashion shopping assistant using Google's Agent Development Kit. Four agents, eleven tools, three hundred products, zero dollars.
+
+Here's how it works and what I learned.
+
+---
+
+## The Problem with Single-Agent Chatbots
+
+Most shopping chatbots are glorified search bars. You type "red dress," it returns a filtered list. There's no conversation, no refinement, no styling advice.
+
+The issue is tool overload. Give one agent fifteen tools  -  search, filter, compare, suggest accessories, check stock, find deals  -  and it struggles to pick the right one. It hallucinates parameters. It calls the wrong tool for the intent.
+
+The fix is specialization. Instead of one agent doing everything, I split the work into three specialists, each with a focused set of tools, coordinated by a root orchestrator.
+
+---
+
+## The Architecture
+
+The system has four agents arranged in a hub-and-spoke pattern.
+
+The **shopping orchestrator** is the root agent. It receives every customer message, classifies the intent, and routes to the right specialist. It never queries the database directly  -  its only job is routing.
+
+The **product finder** handles all catalog searches. It has four tools: `search_products` for filtered browsing, `get_product_details` for deep dives, `get_similar_items` for recommendations, and `filter_by_attributes` for specific criteria like fabric or tags. When a customer says "show me evening dresses," this agent handles it.
+
+The **style advisor** handles fashion expertise. It compares products side-by-side, suggests accessories that pair with a chosen item, surfaces trending pieces, and provides occasion-appropriate style tips. When a customer says "which of these would look better for a wedding," this agent handles it.
+
+The **availability checker** handles logistics. Stock levels, size availability, price ranges, and budget-constrained deal finding. When a customer says "do you have that in a medium," this agent handles it.
+
+Each specialist has its own Gemini 2.5 Flash instance, its own instruction prompt, and its own tool set. They share a single BigQuery table but never see each other's tools.
+
+---
+
+## The Data Layer
+
+The product catalog is a single BigQuery table with 22 columns and 300 synthetic fashion products. Dresses, tops, pants, jackets, accessories  -  each with colors, styles, occasions, fabrics, sizes, prices, ratings, and descriptive tags.
+
+Two design decisions shaped the schema.
+
+First, I used ARRAY columns for sizes and tags. Instead of a separate `product_sizes` junction table, the `size_available` column stores `["XS", "S", "M", "L", "XL"]` directly. BigQuery queries these with UNNEST: `WHERE "M" IN UNNEST(size_available)`. Same for tags like "backless" or "v_neck." This eliminates joins and keeps every tool's SQL simple.
+
+Second, I used a single denormalized table instead of normalized relations. BigQuery is columnar  -  it only reads the columns you SELECT, regardless of how wide the table is. A 22-column table where you read 6 columns costs the same as a 6-column table. The simplicity gain from avoiding joins outweighs any theoretical normalization benefit at this scale.
+
+---
+
+## The Search Broadening Strategy
+
+This is the feature I'm most proud of, and it's not a feature in the traditional sense. It's a behavior encoded in the agent's instructions.
+
+When a customer asks for "a red flowy evening dress" and the catalog only has one red evening dress (and it's bodycon, not flowy), most chatbots return "no results found." That's a dead end.
+
+My product finder does something different. It searches with all filters first. When it gets no results, it drops the least critical filter  -  in this case, "flowy"  -  and searches again. Then it tells the customer what happened: "I couldn't find a red flowy evening dress, so I broadened the search to all red evening dresses. Here's what I found."
+
+This is how a real personal shopper operates. Start specific, widen progressively, and be transparent about it.
+
+The behavior isn't hardcoded in SQL or Python. It's in the agent's instruction prompt. Gemini reads the instructions, recognizes the no-results scenario, and decides which filter to drop. The LLM handles the judgment call; the tools handle the data retrieval.
+
+---
+
+## Fixed SQL vs. Text-to-SQL
+
+Every tool in this system uses hand-written SQL with parameterized inputs. No tool generates SQL dynamically from natural language.
+
+This is a deliberate choice. Text-to-SQL is impressive in demos but dangerous in production. The LLM might generate a query that scans the entire table (expensive), returns unexpected columns (confusing for the agent), or includes SQL injection vectors (dangerous if connected to real data).
+
+Fixed SQL means I know exactly what runs. `search_products` always generates the same SELECT with a dynamic WHERE clause. `get_similar_items` always uses the same CTE with attribute-based scoring. Every query is testable, predictable, and safe.
+
+The tradeoff is flexibility  -  a new search pattern requires a code change. But for a bounded product catalog with known attributes, that's the right tradeoff. You don't need infinite SQL flexibility when you have 11 well-designed tools covering every reasonable customer query.
+
+---
+
+## What I Learned About Agent Instructions
+
+The hardest part of this project wasn't the code. tools.py is 300 lines of straightforward SQL. agent.py is 120 lines of agent configuration.
+
+The hard part was writing instructions that produce consistent, high-quality responses across edge cases.
+
+Three examples.
+
+For the product finder, I had to specify "present a maximum of 5 items at a time." Without this, the agent would dump all 10 results in one message  -  overwhelming for a customer. With the limit, it presents 5 and asks "would you like to see more?"
+
+For the style advisor, I had to specify "explain WHY accessories pair well." Without this, it would just list matching accessories. With the instruction, it says things like "the gold hardware will contrast beautifully with the red dress, adding warmth without competing with the bold color." That's the difference between a search result and a styling experience.
+
+For the availability checker, I had to specify "always mention the exact price." Without this, it would say "it's in the mid price range"  -  useless for a buying decision. With the instruction, it says "$100.43"  -  actionable information.
+
+Agent instructions are the product design layer of LLM applications. They deserve the same attention as UI wireframes.
+
+---
+
+## The $0 Stack
+
+The entire project runs at zero cost.
+
+Gemini 2.5 Flash through AI Studio's free tier handles all LLM inference. The rate limit (5-15 RPM) is fine for development and demos. BigQuery's free tier provides 1 TB of queries and 10 GB of storage per month  -  orders of magnitude more than this project needs. ADK is open source. Python is free. The ADK web UI provides the chat interface.
+
+For production, you'd switch to Vertex AI for higher rate limits and SLA guarantees, deploy to Cloud Run for HTTPS and autoscaling, and add monitoring. But the architecture stays the same.
+
+---
+
+## Results
+
+The agent correctly routes queries to the right specialist across all test scenarios. Search queries go to product_finder. Styling questions go to style_advisor. Stock checks go to availability_checker.
+
+When exact matches aren't available, the search broadening behavior kicks in  -  the agent drops filters, explains what it changed, and still delivers useful results.
+
+The accessory suggestions include reasoning: why a gold belt pairs with a red dress, why a black necklace grounds a bold color. The trending results include ratings and descriptions. The deal finder prioritizes quality within a budget, not just the cheapest items.
+
+Three hundred lines of tool code. One hundred twenty lines of agent configuration. Four agents coordinating through natural language routing. A conversational shopping experience that handles ambiguity, broadens searches, and explains its recommendations.
+
+And it cost nothing to build.
+
+---
+
+## What's Next
+
+This is my sixth ADK project, but the first one that faces customers instead of analysts. The next step is a Vertex AI Pipeline project  -  taking a machine learning model from training through registry to endpoint deployment with Kubeflow orchestration and drift monitoring. Different problem space, same principle: build the architecture that production systems actually need.
+
+The repo is on GitHub: [github.com/gbhorne/adk-fashion-chatbot](https://github.com/gbhorne/adk-fashion-chatbot)
+
+---
+
+*Built with Google ADK, Gemini 2.5 Flash, BigQuery, and Python. Architecture diagram and documentation included in the repository.*
