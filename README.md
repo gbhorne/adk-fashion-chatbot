@@ -1,14 +1,13 @@
-﻿# ADK Fashion Shopping Chatbot
+# ADK Fashion Shopping Chatbot
 
 A conversational AI shopping assistant built with **Google ADK**, **Gemini 2.5 Flash**, and **BigQuery**. Customers describe what they want in natural language, and the multi-agent system searches a product catalog, provides styling advice, and checks availability - all through conversation.
 
-**Total cost: ** - AI Studio free tier + BigQuery free tier.
 
 ## Architecture
 
 ![Architecture Diagram](architecture_diagram.svg)
 
-**4 agents, 11 tools, 300 products, 22 columns.**
+4 agents, 11 tools, 300 products, 22 columns.
 
 | Agent | Role | Tools |
 |-------|------|-------|
@@ -20,9 +19,9 @@ A conversational AI shopping assistant built with **Google ADK**, **Gemini 2.5 F
 ## How It Works
 
 1. Customer types a message: *"I need a red evening dress, something flowy"*
-2. Root orchestrator detects **search intent** and transfers to product_finder
+2. Root orchestrator detects search intent and transfers to product_finder
 3. Product finder calls search_products(category="dress", color="red", occasion="evening", style="flowy")
-4. If no exact matches, agent **broadens the search** automatically (drops "flowy" filter)
+4. If no exact matches, agent broadens the search automatically (drops "flowy" filter)
 5. Presents results conversationally with ratings, prices, and available sizes
 6. Customer refines: *"What about accessories?"* and routes to style_advisor
 7. Style advisor calls suggest_accessories(product_id) and explains WHY each pairs well
@@ -49,7 +48,7 @@ A conversational AI shopping assistant built with **Google ADK**, **Gemini 2.5 F
 | Jackets | 55 | fitted, oversized, cropped, longline, structured | 55-400 |
 | Accessories | 55 | statement, minimal, classic, boho, modern | 15-250 |
 
-**Schema highlights:** 20 colors, 8 occasions, 14 fabrics, ARRAY columns for size_available and tags (queried with UNNEST).
+Schema highlights: 20 colors, 8 occasions, 14 fabrics, ARRAY columns for size_available and tags (queried with UNNEST).
 
 ## Quick Start
 
@@ -99,17 +98,25 @@ Open Web Preview on port 8000 and start chatting.
 
 ## Verification
 
-68/68 checks passed.
+68/68 checks passed. See [verification_results.txt](verification_results.txt) for full output.
+
+Total checks: 68
+Passed:       68
+Failed:       0
+ALL CHECKS PASSED - Ready for GitHub push!
 
 ## Key Design Decisions
 
-1. **Multi-agent over monolithic** - Specialist agents with focused tool sets produce more accurate routing and responses
-2. **Fixed SQL with parameters over text-to-SQL** - Security (no injection), reliability, predictable cost
-3. **BigQuery ARRAY columns** - UNNEST for sizes and tags avoids join tables, leverages BigQuery columnar strengths
-4. **AI Studio free tier** - Same Gemini 2.5 Flash model, zero cost, sufficient for POC
-5. **Automatic search broadening** - When no exact matches, agent drops filters one at a time and explains what it did
-6. **Single denormalized table** - 22 columns, no joins needed, optimized for BigQuery architecture
+1. Multi-agent over monolithic - Specialist agents with focused tool sets produce more accurate routing and responses
+2. Fixed SQL with parameters over text-to-SQL - Security (no injection), reliability, predictable cost
+3. BigQuery ARRAY columns - UNNEST for sizes and tags avoids join tables, leverages BigQuery columnar strengths
+4. AI Studio free tier - Same Gemini 2.5 Flash model, zero cost, sufficient for POC
+5. Automatic search broadening - When no exact matches, agent drops filters one at a time and explains what it did
+6. Single denormalized table - 22 columns, no joins needed, optimized for BigQuery architecture
 
 ## License
 
 MIT
+
+
+
