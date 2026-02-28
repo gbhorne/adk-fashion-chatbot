@@ -1,135 +1,137 @@
-# ADK Fashion Shopping Chatbot
+-#- -A-D-K- -F-a-s-h-i-o-n- -S-h-o-p-p-i-n-g- -C-h-a-t-b-o-t-
+-
+-A- -c-o-n-v-e-r-s-a-t-i-o-n-a-l- -A-I- -s-h-o-p-p-i-n-g- -a-s-s-i-s-t-a-n-t- -b-u-i-l-t- -w-i-t-h- -*-*-G-o-o-g-l-e- -A-D-K-*-*-,- -*-*-G-e-m-i-n-i- -2-.-5- -F-l-a-s-h-*-*-,- -a-n-d- -*-*-B-i-g-Q-u-e-r-y-*-*-.- -C-u-s-t-o-m-e-r-s- -d-e-s-c-r-i-b-e- -w-h-a-t- -t-h-e-y- -w-a-n-t- -i-n- -n-a-t-u-r-a-l- -l-a-n-g-u-a-g-e-,- -a-n-d- -t-h-e- -m-u-l-t-i---a-g-e-n-t- -s-y-s-t-e-m- -s-e-a-r-c-h-e-s- -a- -p-r-o-d-u-c-t- -c-a-t-a-l-o-g-,- -p-r-o-v-i-d-e-s- -s-t-y-l-i-n-g- -a-d-v-i-c-e-,- -a-n-d- -c-h-e-c-k-s- -a-v-a-i-l-a-b-i-l-i-t-y- -â-€-”- -a-l-l- -t-h-r-o-u-g-h- -c-o-n-v-e-r-s-a-t-i-o-n-.-
+-
+-*-*-T-o-t-a-l- -c-o-s-t-:- -$-0-*-*- -â-€-”- -A-I- -S-t-u-d-i-o- -f-r-e-e- -t-i-e-r- -+- -B-i-g-Q-u-e-r-y- -f-r-e-e- -t-i-e-r-.-
+-
+-#-#- -A-r-c-h-i-t-e-c-t-u-r-e-
+-
+-!-[-A-r-c-h-i-t-e-c-t-u-r-e- -D-i-a-g-r-a-m-]-(-a-r-c-h-i-t-e-c-t-u-r-e-_-d-i-a-g-r-a-m-.-s-v-g-)-
+-
+-*-*-4- -a-g-e-n-t-s-,- -1-1- -t-o-o-l-s-,- -3-0-0- -p-r-o-d-u-c-t-s-,- -2-2- -c-o-l-u-m-n-s-.-*-*-
+-
+-|- -A-g-e-n-t- -|- -R-o-l-e- -|- -T-o-o-l-s- -|-
+-|---------------|-------------|---------------|-
+-|- -`-s-h-o-p-p-i-n-g-_-o-r-c-h-e-s-t-r-a-t-o-r-`- -|- -R-o-o-t- -a-g-e-n-t- -â-€-”- -r-o-u-t-e-s- -b-y- -i-n-t-e-n-t- -|- -`-t-r-a-n-s-f-e-r-_-t-o-_-a-g-e-n-t-`- -|-
+-|- -`-p-r-o-d-u-c-t-_-f-i-n-d-e-r-`- -|- -S-e-a-r-c-h-e-s- -c-a-t-a-l-o-g-,- -f-i-n-d-s- -s-i-m-i-l-a-r- -i-t-e-m-s- -|- -`-s-e-a-r-c-h-_-p-r-o-d-u-c-t-s-`-,- -`-g-e-t-_-p-r-o-d-u-c-t-_-d-e-t-a-i-l-s-`-,- -`-g-e-t-_-s-i-m-i-l-a-r-_-i-t-e-m-s-`-,- -`-f-i-l-t-e-r-_-b-y-_-a-t-t-r-i-b-u-t-e-s-`- -|-
+-|- -`-s-t-y-l-e-_-a-d-v-i-s-o-r-`- -|- -S-t-y-l-i-n-g- -a-d-v-i-c-e-,- -c-o-m-p-a-r-i-s-o-n-s-,- -a-c-c-e-s-s-o-r-i-e-s-,- -t-r-e-n-d-s- -|- -`-g-e-t-_-s-t-y-l-e-_-t-i-p-s-`-,- -`-c-o-m-p-a-r-e-_-s-t-y-l-e-s-`-,- -`-s-u-g-g-e-s-t-_-a-c-c-e-s-s-o-r-i-e-s-`-,- -`-g-e-t-_-t-r-e-n-d-i-n-g-`- -|-
+-|- -`-a-v-a-i-l-a-b-i-l-i-t-y-_-c-h-e-c-k-e-r-`- -|- -S-t-o-c-k-,- -s-i-z-e-s-,- -p-r-i-c-i-n-g-,- -d-e-a-l-s- -|- -`-c-h-e-c-k-_-s-t-o-c-k-`-,- -`-g-e-t-_-p-r-i-c-e-_-r-a-n-g-e-`-,- -`-f-i-n-d-_-d-e-a-l-s-`- -|-
+-
+-#-#- -H-o-w- -I-t- -W-o-r-k-s-
+-
+-1-.- -C-u-s-t-o-m-e-r- -t-y-p-e-s- -a- -m-e-s-s-a-g-e-:- -*-"-I- -n-e-e-d- -a- -r-e-d- -e-v-e-n-i-n-g- -d-r-e-s-s-,- -s-o-m-e-t-h-i-n-g- -f-l-o-w-y-"-*-
+-2-.- -R-o-o-t- -o-r-c-h-e-s-t-r-a-t-o-r- -d-e-t-e-c-t-s- -*-*-s-e-a-r-c-h- -i-n-t-e-n-t-*-*- -â-†-’- -t-r-a-n-s-f-e-r-s- -t-o- -`-p-r-o-d-u-c-t-_-f-i-n-d-e-r-`-
+-3-.- -P-r-o-d-u-c-t- -f-i-n-d-e-r- -c-a-l-l-s- -`-s-e-a-r-c-h-_-p-r-o-d-u-c-t-s-(-c-a-t-e-g-o-r-y-=-"-d-r-e-s-s-"-,- -c-o-l-o-r-=-"-r-e-d-"-,- -o-c-c-a-s-i-o-n-=-"-e-v-e-n-i-n-g-"-,- -s-t-y-l-e-=-"-f-l-o-w-y-"-)-`-
+-4-.- -I-f- -n-o- -e-x-a-c-t- -m-a-t-c-h-e-s-,- -a-g-e-n-t- -*-*-b-r-o-a-d-e-n-s- -t-h-e- -s-e-a-r-c-h-*-*- -a-u-t-o-m-a-t-i-c-a-l-l-y- -(-d-r-o-p-s- -"-f-l-o-w-y-"- -f-i-l-t-e-r-)-
+-5-.- -P-r-e-s-e-n-t-s- -r-e-s-u-l-t-s- -c-o-n-v-e-r-s-a-t-i-o-n-a-l-l-y- -w-i-t-h- -r-a-t-i-n-g-s-,- -p-r-i-c-e-s-,- -a-n-d- -a-v-a-i-l-a-b-l-e- -s-i-z-e-s-
+-6-.- -C-u-s-t-o-m-e-r- -r-e-f-i-n-e-s-:- -*-"-W-h-a-t- -a-b-o-u-t- -a-c-c-e-s-s-o-r-i-e-s-?-"-*- -â-†-’- -r-o-u-t-e-s- -t-o- -`-s-t-y-l-e-_-a-d-v-i-s-o-r-`-
+-7-.- -S-t-y-l-e- -a-d-v-i-s-o-r- -c-a-l-l-s- -`-s-u-g-g-e-s-t-_-a-c-c-e-s-s-o-r-i-e-s-(-p-r-o-d-u-c-t-_-i-d-)-`- -â-†-’- -e-x-p-l-a-i-n-s- -W-H-Y- -e-a-c-h- -p-a-i-r-s- -w-e-l-l-
+-
+-#-#- -T-e-c-h- -S-t-a-c-k-
+-
+-|- -C-o-m-p-o-n-e-n-t- -|- -T-e-c-h-n-o-l-o-g-y- -|- -C-o-s-t- -|-
+-|-----------------------|-----------------------|-------------|-
+-|- -A-g-e-n-t- -F-r-a-m-e-w-o-r-k- -|- -G-o-o-g-l-e- -A-D-K- -(-A-g-e-n-t- -D-e-v-e-l-o-p-m-e-n-t- -K-i-t-)- -|- -F-r-e-e- -|-
+-|- -L-L-M- -|- -G-e-m-i-n-i- -2-.-5- -F-l-a-s-h- -v-i-a- -A-I- -S-t-u-d-i-o- -|- -F-r-e-e- -t-i-e-r- -|-
+-|- -D-a-t-a-b-a-s-e- -|- -B-i-g-Q-u-e-r-y- -(-f-a-s-h-i-o-n-_-s-t-o-r-e-.-p-r-o-d-u-c-t-_-c-a-t-a-l-o-g-)- -|- -F-r-e-e- -t-i-e-r- -|-
+-|- -L-a-n-g-u-a-g-e- -|- -P-y-t-h-o-n- -3-.-1-2- -|- -F-r-e-e- -|-
+-|- -C-h-a-t- -I-n-t-e-r-f-a-c-e- -|- -A-D-K- -W-e-b- -U-I- -(-`-a-d-k- -w-e-b- -.-`-)- -|- -B-u-i-l-t---i-n- -|-
+-
+-#-#- -P-r-o-d-u-c-t- -C-a-t-a-l-o-g-
+-
+-3-0-0- -s-y-n-t-h-e-t-i-c- -f-a-s-h-i-o-n- -p-r-o-d-u-c-t-s- -a-c-r-o-s-s- -5- -c-a-t-e-g-o-r-i-e-s-:-
+-
+-|- -C-a-t-e-g-o-r-y- -|- -C-o-u-n-t- -|- -S-t-y-l-e-s- -|- -P-r-i-c-e- -R-a-n-g-e- -|-
+-|---------------------|---------------|-----------------|---------------------------|-
+-|- -D-r-e-s-s-e-s- -|- -8-0- -|- -f-l-o-w-y-,- -f-i-t-t-e-d-,- -a---l-i-n-e-,- -b-o-d-y-c-o-n-,- -w-r-a-p-,- -e-m-p-i-r-e-_-w-a-i-s-t-,- -s-h-i-f-t- -|- -$-4-5-â-€-“-$-3-5-0- -|-
+-|- -T-o-p-s- -|- -5-5- -|- -r-e-l-a-x-e-d-,- -f-i-t-t-e-d-,- -o-v-e-r-s-i-z-e-d-,- -c-r-o-p-p-e-d-,- -p-e-p-l-u-m- -|- -$-2-5-â-€-“-$-1-5-0- -|-
+-|- -P-a-n-t-s- -|- -5-5- -|- -s-l-i-m-,- -w-i-d-e-_-l-e-g-,- -b-o-o-t-c-u-t-,- -s-t-r-a-i-g-h-t-,- -t-a-p-e-r-e-d- -|- -$-3-5-â-€-“-$-2-0-0- -|-
+-|- -J-a-c-k-e-t-s- -|- -5-5- -|- -f-i-t-t-e-d-,- -o-v-e-r-s-i-z-e-d-,- -c-r-o-p-p-e-d-,- -l-o-n-g-l-i-n-e-,- -s-t-r-u-c-t-u-r-e-d- -|- -$-5-5-â-€-“-$-4-0-0- -|-
+-|- -A-c-c-e-s-s-o-r-i-e-s- -|- -5-5- -|- -s-t-a-t-e-m-e-n-t-,- -m-i-n-i-m-a-l-,- -c-l-a-s-s-i-c-,- -b-o-h-o-,- -m-o-d-e-r-n- -|- -$-1-5-â-€-“-$-2-5-0- -|-
+-
+-*-*-S-c-h-e-m-a- -h-i-g-h-l-i-g-h-t-s-:-*-*- -2-0- -c-o-l-o-r-s-,- -8- -o-c-c-a-s-i-o-n-s-,- -1-4- -f-a-b-r-i-c-s-,- -A-R-R-A-Y- -c-o-l-u-m-n-s- -f-o-r- -`-s-i-z-e-_-a-v-a-i-l-a-b-l-e-`- -a-n-d- -`-t-a-g-s-`- -(-q-u-e-r-i-e-d- -w-i-t-h- -`-U-N-N-E-S-T-`-)-.-
+-
+-#-#- -Q-u-i-c-k- -S-t-a-r-t-
+-
+-#-#-#- -P-r-e-r-e-q-u-i-s-i-t-e-s-
+--- -G-C-P- -p-r-o-j-e-c-t- -w-i-t-h- -B-i-g-Q-u-e-r-y- -e-n-a-b-l-e-d-
+--- -A-I- -S-t-u-d-i-o- -A-P-I- -k-e-y- -(-[-a-i-s-t-u-d-i-o-.-g-o-o-g-l-e-.-c-o-m-/-a-p-i-k-e-y-]-(-h-t-t-p-s-:-/-/-a-i-s-t-u-d-i-o-.-g-o-o-g-l-e-.-c-o-m-/-a-p-i-k-e-y-)-)-
+--- -P-y-t-h-o-n- -3-.-1-0-+-
+-
+-#-#-#- -S-e-t-u-p-
+-`-`-`-b-a-s-h-
+-#- -C-l-o-n-e-
+-g-i-t- -c-l-o-n-e- -h-t-t-p-s-:-/-/-g-i-t-h-u-b-.-c-o-m-/-g-b-h-o-r-n-e-/-a-d-k---f-a-s-h-i-o-n---c-h-a-t-b-o-t-.-g-i-t-
+-c-d- -a-d-k---f-a-s-h-i-o-n---c-h-a-t-b-o-t-
+-
+-#- -I-n-s-t-a-l-l- -d-e-p-e-n-d-e-n-c-i-e-s-
+-p-i-p- -i-n-s-t-a-l-l- -g-o-o-g-l-e---a-d-k- -g-o-o-g-l-e---c-l-o-u-d---b-i-g-q-u-e-r-y-
+-
+-#- -S-e-t- -A-P-I- -k-e-y-
+-e-x-p-o-r-t- -G-O-O-G-L-E-_-A-P-I-_-K-E-Y-=-"-y-o-u-r---k-e-y---h-e-r-e-"-
+-
+-#- -S-e-t- -G-C-P- -p-r-o-j-e-c-t-
+-g-c-l-o-u-d- -c-o-n-f-i-g- -s-e-t- -p-r-o-j-e-c-t- -Y-O-U-R-_-P-R-O-J-E-C-T-_-I-D-
+-
+-#- -C-r-e-a-t-e- -B-i-g-Q-u-e-r-y- -d-a-t-a-s-e-t- -a-n-d- -t-a-b-l-e-
+-b-q- -m-k- -----d-a-t-a-s-e-t- -f-a-s-h-i-o-n-_-s-t-o-r-e-
+-b-q- -q-u-e-r-y- -----u-s-e-_-l-e-g-a-c-y-_-s-q-l-=-f-a-l-s-e- -<- -s-c-h-e-m-a-.-s-q-l-
+-
+-#- -G-e-n-e-r-a-t-e- -a-n-d- -l-o-a-d- -p-r-o-d-u-c-t- -d-a-t-a-
+-p-y-t-h-o-n- -g-e-n-e-r-a-t-e-_-p-r-o-d-u-c-t-s-.-p-y-
+-b-q- -l-o-a-d- -----s-o-u-r-c-e-_-f-o-r-m-a-t-=-N-E-W-L-I-N-E-_-D-E-L-I-M-I-T-E-D-_-J-S-O-N- -f-a-s-h-i-o-n-_-s-t-o-r-e-.-p-r-o-d-u-c-t-_-c-a-t-a-l-o-g- -p-r-o-d-u-c-t-s-.-j-s-o-n-
+-
+-#- -L-a-u-n-c-h-
+-a-d-k- -w-e-b- -.-
+-`-`-`-
+-
+-O-p-e-n- -W-e-b- -P-r-e-v-i-e-w- -o-n- -p-o-r-t- -8-0-0-0- -a-n-d- -s-t-a-r-t- -c-h-a-t-t-i-n-g-.-
+-
+-#-#- -E-x-a-m-p-l-e- -C-o-n-v-e-r-s-a-t-i-o-n-s-
+-
+-*-*-P-r-o-d-u-c-t- -S-e-a-r-c-h-:-*-*-
+->- -*-"-I-'-m- -l-o-o-k-i-n-g- -f-o-r- -a- -r-e-d- -e-v-e-n-i-n-g- -d-r-e-s-s-,- -s-o-m-e-t-h-i-n-g- -f-l-o-w-y-"-*-
+->- -â-†-’- -A-g-e-n-t- -s-e-a-r-c-h-e-s-,- -b-r-o-a-d-e-n-s- -i-f- -n-e-e-d-e-d-,- -p-r-e-s-e-n-t-s- -t-o-p- -m-a-t-c-h-e-s- -w-i-t-h- -p-r-i-c-e-s- -a-n-d- -r-a-t-i-n-g-s-
+-
+-*-*-T-r-e-n-d-i-n-g-:-*-*-
+->- -*-"-W-h-a-t-'-s- -t-r-e-n-d-i-n-g- -i-n- -d-r-e-s-s-e-s- -r-i-g-h-t- -n-o-w-?-"-*-
+->- -â-†-’- -R-e-t-u-r-n-s- -t-o-p---r-a-t-e-d- -i-t-e-m-s- -w-i-t-h- -d-e-s-c-r-i-p-t-i-o-n-s- -a-n-d- -s-t-y-l-i-n-g- -c-o-n-t-e-x-t-
+-
+-*-*-A-c-c-e-s-s-o-r-i-e-s-:-*-*-
+->- -*-"-C-a-n- -y-o-u- -s-u-g-g-e-s-t- -a-c-c-e-s-s-o-r-i-e-s- -t-o- -g-o- -w-i-t-h- -t-h-e- -C-r-i-m-s-o-n- -C-o-n-t-o-u-r- -F-r-o-c-k-?-"-*-
+->- -â-†-’- -R-e-c-o-m-m-e-n-d-s- -m-a-t-c-h-i-n-g- -p-i-e-c-e-s- -w-i-t-h- -e-x-p-l-a-n-a-t-i-o-n-s- -o-f- -w-h-y- -t-h-e-y- -p-a-i-r- -w-e-l-l-
+-
+-*-*-B-u-d-g-e-t- -S-h-o-p-p-i-n-g-:-*-*-
+->- -*-"-D-o- -y-o-u- -h-a-v-e- -a-n-y-t-h-i-n-g- -u-n-d-e-r- -$-5-0-?-"-*-
+->- -â-†-’- -F-i-n-d-s- -b-e-s-t---r-a-t-e-d- -i-t-e-m-s- -w-i-t-h-i-n- -b-u-d-g-e-t-
+-
+-#-#- -P-r-o-j-e-c-t- -S-t-r-u-c-t-u-r-e-
+-
+-`-`-`-
+-f-a-s-h-i-o-n-_-s-h-o-p-p-i-n-g-_-a-g-e-n-t-s-/-
+-â-”-œ-â-”-€-â-”-€- -_-_-i-n-i-t-_-_-.-p-y- - - - - - - - - - - - - - - - - - - - -#- -E-x-p-o-r-t-s- -r-o-o-t-_-a-g-e-n-t- -f-o-r- -A-D-K- -d-i-s-c-o-v-e-r-y-
+-â-”-œ-â-”-€-â-”-€- -a-g-e-n-t-.-p-y- - - - - - - - - - - - - - - - - - - - - - - -#- -R-o-o-t- -o-r-c-h-e-s-t-r-a-t-o-r- -+- -3- -s-u-b---a-g-e-n-t-s- -(-~-1-2-0- -l-i-n-e-s-)-
+-â-”-œ-â-”-€-â-”-€- -t-o-o-l-s-.-p-y- - - - - - - - - - - - - - - - - - - - - - - -#- -1-1- -B-i-g-Q-u-e-r-y- -t-o-o-l-s- -(-~-3-0-0- -l-i-n-e-s-)-
+-â-”-œ-â-”-€-â-”-€- -g-e-n-e-r-a-t-e-_-p-r-o-d-u-c-t-s-.-p-y- - - - - - - - - - - -#- -S-y-n-t-h-e-t-i-c- -d-a-t-a- -g-e-n-e-r-a-t-o-r- -(-3-0-0- -p-r-o-d-u-c-t-s-)-
+-â-”-œ-â-”-€-â-”-€- -a-r-c-h-i-t-e-c-t-u-r-e-_-d-i-a-g-r-a-m-.-s-v-g- - - - - - - -#- -F-u-l-l---c-o-l-o-r- -a-r-c-h-i-t-e-c-t-u-r-e- -d-i-a-g-r-a-m-
+-â-”-œ-â-”-€-â-”-€- -v-e-r-i-f-y-.-s-h- - - - - - - - - - - - - - - - - - - - - - -#- -V-e-r-i-f-i-c-a-t-i-o-n- -s-c-r-i-p-t- -(-C-l-o-u-d- -S-h-e-l-l-)-
+-â-”-”-â-”-€-â-”-€- -d-o-c-s-/-
+- - - - -â-”-œ-â-”-€-â-”-€- -A-R-C-H-I-T-E-C-T-U-R-E-.-m-d- - - - - - - - - - - - -#- -6- -A-D-R-s-,- -p-i-p-e-l-i-n-e- -f-l-o-w-,- -d-e-s-i-g-n- -d-e-c-i-s-i-o-n-s-
+- - - - -â-”-œ-â-”-€-â-”-€- -B-U-I-L-D-_-G-U-I-D-E-.-m-d- - - - - - - - - - - - - -#- -S-t-e-p---b-y---s-t-e-p- -b-u-i-l-d- -w-a-l-k-t-h-r-o-u-g-h-
+- - - - -â-”-”-â-”-€-â-”-€- -Q-A-_-G-U-I-D-E-.-m-d- - - - - - - - - - - - - - - - -#- -4-0-+- -i-n-t-e-r-v-i-e-w- -Q-&-A-
+-`-`-`-
+-
+-#-#- -K-e-y- -D-e-s-i-g-n- -D-e-c-i-s-i-o-n-s-
+-
+-1-.- -*-*-M-u-l-t-i---a-g-e-n-t- -o-v-e-r- -m-o-n-o-l-i-t-h-i-c-*-*- -â-€-”- -S-p-e-c-i-a-l-i-s-t- -a-g-e-n-t-s- -w-i-t-h- -f-o-c-u-s-e-d- -t-o-o-l- -s-e-t-s- -p-r-o-d-u-c-e- -m-o-r-e- -a-c-c-u-r-a-t-e- -r-o-u-t-i-n-g- -a-n-d- -r-e-s-p-o-n-s-e-s-
+-2-.- -*-*-F-i-x-e-d- -S-Q-L- -w-i-t-h- -p-a-r-a-m-e-t-e-r-s- -o-v-e-r- -t-e-x-t---t-o---S-Q-L-*-*- -â-€-”- -S-e-c-u-r-i-t-y- -(-n-o- -i-n-j-e-c-t-i-o-n-)-,- -r-e-l-i-a-b-i-l-i-t-y-,- -p-r-e-d-i-c-t-a-b-l-e- -c-o-s-t-
+-3-.- -*-*-B-i-g-Q-u-e-r-y- -A-R-R-A-Y- -c-o-l-u-m-n-s-*-*- -â-€-”- -`-U-N-N-E-S-T-`- -f-o-r- -s-i-z-e-s- -a-n-d- -t-a-g-s- -a-v-o-i-d-s- -j-o-i-n- -t-a-b-l-e-s-,- -l-e-v-e-r-a-g-e-s- -B-i-g-Q-u-e-r-y- -c-o-l-u-m-n-a-r- -s-t-r-e-n-g-t-h-s-
+-4-.- -*-*-A-I- -S-t-u-d-i-o- -f-r-e-e- -t-i-e-r-*-*- -â-€-”- -S-a-m-e- -G-e-m-i-n-i- -2-.-5- -F-l-a-s-h- -m-o-d-e-l-,- -$-0- -c-o-s-t-,- -s-u-f-f-i-c-i-e-n-t- -f-o-r- -P-O-C-
+-5-.- -*-*-A-u-t-o-m-a-t-i-c- -s-e-a-r-c-h- -b-r-o-a-d-e-n-i-n-g-*-*- -â-€-”- -W-h-e-n- -n-o- -e-x-a-c-t- -m-a-t-c-h-e-s-,- -a-g-e-n-t- -d-r-o-p-s- -f-i-l-t-e-r-s- -o-n-e- -a-t- -a- -t-i-m-e- -a-n-d- -e-x-p-l-a-i-n-s- -w-h-a-t- -i-t- -d-i-d-
+-6-.- -*-*-S-i-n-g-l-e- -d-e-n-o-r-m-a-l-i-z-e-d- -t-a-b-l-e-*-*- -â-€-”- -2-2- -c-o-l-u-m-n-s-,- -n-o- -j-o-i-n-s- -n-e-e-d-e-d-,- -o-p-t-i-m-i-z-e-d- -f-o-r- -B-i-g-Q-u-e-r-y-'-s- -a-r-c-h-i-t-e-c-t-u-r-e-
+-
+-#-#- -L-i-c-e-n-s-e-
+-
+-M-I-T-
+-
 
-A conversational AI shopping assistant built with **Google ADK**, **Gemini 2.5 Flash**, and **BigQuery**. Customers describe what they want in natural language, and the multi-agent system searches a product catalog, provides styling advice, and checks availability â€” all through conversation.
-
-**Total cost: $0** â€” AI Studio free tier + BigQuery free tier.
-
-## Architecture
-
-![Architecture Diagram](architecture_diagram.svg)
-
-**4 agents, 11 tools, 300 products, 22 columns.**
-
-| Agent | Role | Tools |
-|-------|------|-------|
-| `shopping_orchestrator` | Root agent â€” routes by intent | `transfer_to_agent` |
-| `product_finder` | Searches catalog, finds similar items | `search_products`, `get_product_details`, `get_similar_items`, `filter_by_attributes` |
-| `style_advisor` | Styling advice, comparisons, accessories, trends | `get_style_tips`, `compare_styles`, `suggest_accessories`, `get_trending` |
-| `availability_checker` | Stock, sizes, pricing, deals | `check_stock`, `get_price_range`, `find_deals` |
-
-## How It Works
-
-1. Customer types a message: *"I need a red evening dress, something flowy"*
-2. Root orchestrator detects **search intent** â†’ transfers to `product_finder`
-3. Product finder calls `search_products(category="dress", color="red", occasion="evening", style="flowy")`
-4. If no exact matches, agent **broadens the search** automatically (drops "flowy" filter)
-5. Presents results conversationally with ratings, prices, and available sizes
-6. Customer refines: *"What about accessories?"* â†’ routes to `style_advisor`
-7. Style advisor calls `suggest_accessories(product_id)` â†’ explains WHY each pairs well
-
-## Tech Stack
-
-| Component | Technology | Cost |
-|-----------|-----------|------|
-| Agent Framework | Google ADK (Agent Development Kit) | Free |
-| LLM | Gemini 2.5 Flash via AI Studio | Free tier |
-| Database | BigQuery (fashion_store.product_catalog) | Free tier |
-| Language | Python 3.12 | Free |
-| Chat Interface | ADK Web UI (`adk web .`) | Built-in |
-
-## Product Catalog
-
-300 synthetic fashion products across 5 categories:
-
-| Category | Count | Styles | Price Range |
-|----------|-------|--------|-------------|
-| Dresses | 80 | flowy, fitted, a-line, bodycon, wrap, empire_waist, shift | $45â€“$350 |
-| Tops | 55 | relaxed, fitted, oversized, cropped, peplum | $25â€“$150 |
-| Pants | 55 | slim, wide_leg, bootcut, straight, tapered | $35â€“$200 |
-| Jackets | 55 | fitted, oversized, cropped, longline, structured | $55â€“$400 |
-| Accessories | 55 | statement, minimal, classic, boho, modern | $15â€“$250 |
-
-**Schema highlights:** 20 colors, 8 occasions, 14 fabrics, ARRAY columns for `size_available` and `tags` (queried with `UNNEST`).
-
-## Quick Start
-
-### Prerequisites
-- GCP project with BigQuery enabled
-- AI Studio API key ([aistudio.google.com/apikey](https://aistudio.google.com/apikey))
-- Python 3.10+
-
-### Setup
-```bash
-# Clone
-git clone https://github.com/gbhorne/adk-fashion-chatbot.git
-cd adk-fashion-chatbot
-
-# Install dependencies
-pip install google-adk google-cloud-bigquery
-
-# Set API key
-export GOOGLE_API_KEY="your-key-here"
-
-# Set GCP project
-gcloud config set project YOUR_PROJECT_ID
-
-# Create BigQuery dataset and table
-bq mk --dataset fashion_store
-bq query --use_legacy_sql=false < schema.sql
-
-# Generate and load product data
-python generate_products.py
-bq load --source_format=NEWLINE_DELIMITED_JSON fashion_store.product_catalog products.json
-
-# Launch
-adk web .
-```
-
-Open Web Preview on port 8000 and start chatting.
-
-## Example Conversations
-
-**Product Search:**
-> *"I'm looking for a red evening dress, something flowy"*
-> â†’ Agent searches, broadens if needed, presents top matches with prices and ratings
-
-**Trending:**
-> *"What's trending in dresses right now?"*
-> â†’ Returns top-rated items with descriptions and styling context
-
-**Accessories:**
-> *"Can you suggest accessories to go with the Crimson Contour Frock?"*
-> â†’ Recommends matching pieces with explanations of why they pair well
-
-**Budget Shopping:**
-> *"Do you have anything under $50?"*
-> â†’ Finds best-rated items within budget
-
-## Project Structure
-
-```
-fashion_shopping_agents/
-â”œâ”€â”€ __init__.py                    # Exports root_agent for ADK discovery
-â”œâ”€â”€ agent.py                       # Root orchestrator + 3 sub-agents (~120 lines)
-â”œâ”€â”€ tools.py                       # 11 BigQuery tools (~300 lines)
-â”œâ”€â”€ generate_products.py           # Synthetic data generator (300 products)
-â”œâ”€â”€ architecture_diagram.svg       # Full-color architecture diagram
-â”œâ”€â”€ verify.sh                      # Verification script (Cloud Shell)
-â””â”€â”€ docs/
-    â”œâ”€â”€ ARCHITECTURE.md            # 6 ADRs, pipeline flow, design decisions
-    â”œâ”€â”€ BUILD_GUIDE.md             # Step-by-step build walkthrough
-    â””â”€â”€ QA_GUIDE.md                # 40+ interview Q&A
-```
-
-## Key Design Decisions
-
-1. **Multi-agent over monolithic** â€” Specialist agents with focused tool sets produce more accurate routing and responses
-2. **Fixed SQL with parameters over text-to-SQL** â€” Security (no injection), reliability, predictable cost
-3. **BigQuery ARRAY columns** â€” `UNNEST` for sizes and tags avoids join tables, leverages BigQuery columnar strengths
-4. **AI Studio free tier** â€” Same Gemini 2.5 Flash model, $0 cost, sufficient for POC
-5. **Automatic search broadening** â€” When no exact matches, agent drops filters one at a time and explains what it did
-6. **Single denormalized table** â€” 22 columns, no joins needed, optimized for BigQuery's architecture
-
-## License
-
-MIT
