@@ -1,0 +1,75 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 820" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#E91E63"/><stop offset="100%" style="stop-color:#AD1457"/></linearGradient>
+    <linearGradient id="rootGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#7C4DFF"/><stop offset="100%" style="stop-color:#6200EA"/></linearGradient>
+    <linearGradient id="finderGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#2979FF"/><stop offset="100%" style="stop-color:#1565C0"/></linearGradient>
+    <linearGradient id="styleGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#00BFA5"/><stop offset="100%" style="stop-color:#00897B"/></linearGradient>
+    <linearGradient id="availGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#FF6D00"/><stop offset="100%" style="stop-color:#E65100"/></linearGradient>
+    <linearGradient id="bqGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#4285F4"/><stop offset="100%" style="stop-color:#1A73E8"/></linearGradient>
+    <linearGradient id="geminiGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#FBBC04"/><stop offset="100%" style="stop-color:#F9AB00"/></linearGradient>
+    <filter id="shadow" x="-3%" y="-3%" width="106%" height="112%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15"/></filter>
+  </defs>
+  <rect width="1100" height="820" rx="12" fill="#F8F9FA"/>
+  <rect x="0" y="0" width="1100" height="56" rx="12" fill="url(#headerGrad)"/>
+  <rect x="0" y="20" width="1100" height="36" fill="url(#headerGrad)"/>
+  <text x="550" y="37" text-anchor="middle" fill="white" font-size="20" font-weight="bold">ADK Fashion Shopping Chatbot  Multi-Agent Architecture</text>
+  <rect x="350" y="76" width="400" height="50" rx="25" fill="#ECEFF1" stroke="#90A4AE" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="550" y="105" text-anchor="middle" fill="#37474F" font-size="13" font-weight="600">Customer Chat Interface (ADK Web UI)</text>
+  <line x1="550" y1="126" x2="550" y2="148" stroke="#7C4DFF" stroke-width="2"/>
+  <rect x="250" y="148" width="600" height="80" rx="10" fill="url(#rootGrad)" filter="url(#shadow)"/>
+  <text x="550" y="178" text-anchor="middle" fill="white" font-size="16" font-weight="bold">shopping_orchestrator</text>
+  <text x="550" y="198" text-anchor="middle" fill="#E8EAF6" font-size="11">Root Agent  Routes by intent | Gemini 2.5 Flash via AI Studio</text>
+  <text x="550" y="215" text-anchor="middle" fill="#D1C4E9" font-size="10">search  product_finder | styling  style_advisor | stock  availability_checker</text>
+  <line x1="370" y1="228" x2="210" y2="280" stroke="#2979FF" stroke-width="2"/>
+  <line x1="550" y1="228" x2="550" y2="280" stroke="#00BFA5" stroke-width="2"/>
+  <line x1="730" y1="228" x2="890" y2="280" stroke="#FF6D00" stroke-width="2"/>
+  <rect x="50" y="280" width="320" height="210" rx="10" fill="white" stroke="#2979FF" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="50" y="280" width="320" height="38" rx="10" fill="url(#finderGrad)"/>
+  <rect x="50" y="300" width="320" height="18" fill="url(#finderGrad)"/>
+  <text x="210" y="304" text-anchor="middle" fill="white" font-size="14" font-weight="bold">product_finder</text>
+  <text x="70" y="340" fill="#1565C0" font-size="11" font-weight="600">Tools (4):</text>
+  <text x="70" y="360" fill="#37474F" font-size="11">search_products(category, color, style,</text>
+  <text x="78" y="375" fill="#37474F" font-size="11">occasion, price_tier, max_price)</text>
+  <text x="70" y="395" fill="#37474F" font-size="11">get_product_details(product_id)</text>
+  <text x="70" y="415" fill="#37474F" font-size="11">get_similar_items(product_id)</text>
+  <text x="70" y="435" fill="#37474F" font-size="11">filter_by_attributes(fabric, season, tag)</text>
+  <text x="70" y="468" fill="#78909C" font-size="9" font-style="italic">Broadens search if no exact matches</text>
+  <rect x="390" y="280" width="320" height="210" rx="10" fill="white" stroke="#00BFA5" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="390" y="280" width="320" height="38" rx="10" fill="url(#styleGrad)"/>
+  <rect x="390" y="300" width="320" height="18" fill="url(#styleGrad)"/>
+  <text x="550" y="304" text-anchor="middle" fill="white" font-size="14" font-weight="bold">style_advisor</text>
+  <text x="410" y="340" fill="#00897B" font-size="11" font-weight="600">Tools (4):</text>
+  <text x="410" y="360" fill="#37474F" font-size="11">get_style_tips(occasion, season)</text>
+  <text x="410" y="380" fill="#37474F" font-size="11">compare_styles(id_1, id_2)</text>
+  <text x="410" y="400" fill="#37474F" font-size="11">suggest_accessories(product_id)</text>
+  <text x="410" y="420" fill="#37474F" font-size="11">get_trending(category, season)</text>
+  <text x="410" y="468" fill="#78909C" font-size="9" font-style="italic">Explains WHY items pair well</text>
+  <rect x="730" y="280" width="320" height="210" rx="10" fill="white" stroke="#FF6D00" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="730" y="280" width="320" height="38" rx="10" fill="url(#availGrad)"/>
+  <rect x="730" y="300" width="320" height="18" fill="url(#availGrad)"/>
+  <text x="890" y="304" text-anchor="middle" fill="white" font-size="14" font-weight="bold">availability_checker</text>
+  <text x="750" y="340" fill="#E65100" font-size="11" font-weight="600">Tools (3):</text>
+  <text x="750" y="360" fill="#37474F" font-size="11">check_stock(product_id, size)</text>
+  <text x="750" y="380" fill="#37474F" font-size="11">get_price_range(category, occasion)</text>
+  <text x="750" y="400" fill="#37474F" font-size="11">find_deals(category, max_price)</text>
+  <text x="750" y="468" fill="#78909C" font-size="9" font-style="italic">Always mentions exact prices</text>
+  <line x1="210" y1="490" x2="210" y2="560" stroke="#4285F4" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <line x1="550" y1="490" x2="550" y2="560" stroke="#4285F4" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <line x1="890" y1="490" x2="890" y2="560" stroke="#4285F4" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="550" y="540" text-anchor="middle" fill="#4285F4" font-size="9">BigQuery SQL queries (fixed SQL, no text-to-SQL)</text>
+  <rect x="200" y="560" width="700" height="100" rx="10" fill="url(#bqGrad)" filter="url(#shadow)"/>
+  <text x="550" y="590" text-anchor="middle" fill="white" font-size="16" font-weight="bold">BigQuery  fashion_store.product_catalog</text>
+  <text x="550" y="612" text-anchor="middle" fill="#E3F2FD" font-size="11">300 products | 22 columns | 5 categories | 20 colors | 8 occasions | ARRAY columns for sizes and tags</text>
+  <text x="550" y="632" text-anchor="middle" fill="#BBDEFB" font-size="10">Free tier: 1 TB queries/month | 10 GB storage |  cost</text>
+  <rect x="350" y="690" width="400" height="55" rx="10" fill="url(#geminiGrad)" filter="url(#shadow)"/>
+  <text x="550" y="715" text-anchor="middle" fill="#37474F" font-size="14" font-weight="bold">Gemini 2.5 Flash  AI Studio Free Tier</text>
+  <text x="550" y="733" text-anchor="middle" fill="#5D4037" font-size="10">All 4 agents share the same model | GOOGLE_API_KEY env var</text>
+  <line x1="550" y1="660" x2="550" y2="690" stroke="#F9AB00" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <rect x="50" y="770" width="1000" height="36" rx="8" fill="#263238"/>
+  <text x="110" y="793" text-anchor="middle" fill="#80CBC4" font-size="11" font-weight="600">4 Agents</text>
+  <text x="260" y="793" text-anchor="middle" fill="#82B1FF" font-size="11" font-weight="600">11 Tools</text>
+  <text x="420" y="793" text-anchor="middle" fill="#FFD54F" font-size="11" font-weight="600">300 Products</text>
+  <text x="580" y="793" text-anchor="middle" fill="#FF8A65" font-size="11" font-weight="600">22 Columns</text>
+  <text x="740" y="793" text-anchor="middle" fill="#CE93D8" font-size="11" font-weight="600">Total Cost: </text>
+  <text x="920" y="793" text-anchor="middle" fill="#A5D6A7" font-size="11" font-weight="600">Python + ADK + BigQuery</text>
+</svg>
